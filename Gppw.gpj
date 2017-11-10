@@ -1,3 +1,6 @@
+[Pass]
+	PassSet:
+		PassFlag	TYPE_BOOL	FALSE
 [App]
 	Project:
 		CpuType	TYPE_STRING	"FX2N(C)"
@@ -8,6 +11,3 @@
 	CommInfo:
 		CommCmntNo	TYPE_WORD10	0
 		CmntLength	TYPE_WORD10	32
-[Pass]
-	PassSet:
-		PassFlag	TYPE_BOOL	FALSE

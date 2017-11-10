@@ -1,11 +1,11 @@
 [PCDLG]
 	ConnectDialg:
-		Combo06	TYPE_DWORD10	0
 		Combo01	TYPE_DWORD10	0
 		Combo02	TYPE_DWORD10	0
 		Combo03	TYPE_DWORD10	0
 		Combo04	TYPE_DWORD10	0
 		Combo05	TYPE_DWORD10	0
+		Combo06	TYPE_DWORD10	0
 	Connection:
 		lStructSize	TYPE_DWORD10	128
 		lNetowrkNo	TYPE_DWORD10	0
@@ -86,6 +86,34 @@
 	CnctOption:
 		DlgOpenMode	TYPE_DWORD10	0
 	RUN:
+[TelBlock]
+	ConnectSection:
+		LoggingSW	TYPE_DWORD10	1
+		LineType	TYPE_DWORD10	1
+		OutsideNo	TYPE_STRING	""
+		AtCommandMode	TYPE_DWORD10	1
+		AtCommand	TYPE_STRING	""
+		AtComment	TYPE_STRING	""
+		TelPassword	TYPE_STRING	""
+		ConnectType	TYPE_DWORD10	0
+		PhoneNo	TYPE_STRING	""
+		TargetName	TYPE_STRING	""
+		ConnectComPort	TYPE_DWORD10	1
+		ConnectCond	TYPE_BOOL	FALSE
+		CallBkPhoneNo	TYPE_STRING	""
+		MacParity	TYPE_DWORD10	1
+		MACGsmModemWaitingCount	TYPE_DWORD10	100
+		ConnectWaitTime	TYPE_DWORD10	90
+		ConnectRevWaitTime	TYPE_DWORD10	5
+		DisconnectWaitTime	TYPE_DWORD10	5
+		DisconnectDelayTime	TYPE_DWORD10	3
+		TransResWaitTime	TYPE_DWORD10	1
+		PassCanResWaitTime	TYPE_DWORD10	5
+		TransRetryCount	TYPE_DWORD10	3
+		TransDelayTime	TYPE_DWORD10	0
+		CallBkDisconnectTime	TYPE_DWORD10	90
+		CallBkDelayTime	TYPE_DWORD10	20
+		IntialAtCommand	TYPE_STRING	"AT&f"
 [Gppw]
 	MainFrameWnd:
 		Maximize	TYPE_BOOL	TRUE
@@ -301,10 +329,10 @@
 	SaveTime:
 		Year	TYPE_DWORD10	2017
 		Month	TYPE_DWORD10	11
-		Day	TYPE_DWORD10	9
-		Hour	TYPE_DWORD10	23
-		Minute	TYPE_DWORD10	43
-		Second	TYPE_DWORD10	2
+		Day	TYPE_DWORD10	10
+		Hour	TYPE_DWORD10	0
+		Minute	TYPE_DWORD10	22
+		Second	TYPE_DWORD10	46
 [Prg]
 	PrgOptDlg:
 		EditBlock	TYPE_WORD10	0
@@ -523,28 +551,6 @@
 		SaveStrChgNo	TYPE_WORD10	0
 	DevmInfo:
 		DevmDataNo	TYPE_WORD10	0
-[TelBlock]
-	ConnectSection:
-		TelPassword	TYPE_STRING	""
-		ConnectType	TYPE_DWORD10	0
-		PhoneNo	TYPE_STRING	""
-		TargetName	TYPE_STRING	""
-		ConnectComPort	TYPE_DWORD10	1
-		ConnectCond	TYPE_BOOL	FALSE
-		CallBkPhoneNo	TYPE_STRING	""
-		MacParity	TYPE_DWORD10	1
-		MACGsmModemWaitingCount	TYPE_DWORD10	100
-		ConnectWaitTime	TYPE_DWORD10	90
-		ConnectRevWaitTime	TYPE_DWORD10	5
-		DisconnectWaitTime	TYPE_DWORD10	5
-		DisconnectDelayTime	TYPE_DWORD10	3
-		TransResWaitTime	TYPE_DWORD10	1
-		PassCanResWaitTime	TYPE_DWORD10	5
-		TransRetryCount	TYPE_DWORD10	3
-		TransDelayTime	TYPE_DWORD10	0
-		CallBkDisconnectTime	TYPE_DWORD10	90
-		CallBkDelayTime	TYPE_DWORD10	20
-		IntialAtCommand	TYPE_STRING	"AT&f"
 [Window]
 	Window000:
 		DataName	TYPE_STRING	"MAIN"
@@ -561,13 +567,13 @@
 		FrameStat	TYPE_WORD10	0
 		StepNo	TYPE_DWORD10	-1
 		BlockNo	TYPE_WORD10	65535
-		StepPosition	TYPE_DWORD10	0
+		StepPosition	TYPE_DWORD10	64
 		ViewX	TYPE_DWORD10	0
 		ViewY	TYPE_DWORD10	0
 		WindowOrgX	TYPE_DWORD10	0
 		WindowOrgY	TYPE_DWORD10	0
-		CursorPositionX	TYPE_DWORD10	1
-		CursorPositionY	TYPE_DWORD10	0
+		CursorPositionX	TYPE_DWORD10	4
+		CursorPositionY	TYPE_DWORD10	4
 		MonitorDispType	TYPE_DWORD10	0
 		DispLabelFlag	TYPE_BOOL	FALSE
 		DispLabelStyle	TYPE_BOOL	FALSE
